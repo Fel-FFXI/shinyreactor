@@ -153,7 +153,7 @@ When it detects a player or mob action matching a trigger condition, it executes
 
 ## 👤 Author
 
-Mostly Thorny, some help from Atomos' Ashita V4 repository [here](https://pages.github.com/) (currently in beta), and a tiny bit by Fel.
+Mostly Thorny, some help from Atomos' Ashita-v4beta repository [here](https://github.com/AshitaXI/Ashita-v4beta) (currently in beta), and a tiny bit by Fel.
 Contributions and suggestions welcome!
 
 ---
