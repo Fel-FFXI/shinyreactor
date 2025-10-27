@@ -47,8 +47,8 @@
 Settings are stored in lua files or within the `/config/addons/shinyreactor` directory.  You can edit it manually or and load them using in-game slash commands.
 
 ### Example #1 (Responding to abilities or Spells):
-When any anyone uses Claw Cyclone or Razor Fang, your character will react with  Violent Flourish
-When any anyone uses Stoneskin, they will appear Purple and you'll see an echo statement on your chat window. 
+When anyone uses Claw Cyclone or Razor Fang, your character will react with  Violent Flourish
+When anyone uses Stoneskin, they will appear Purple and you'll see an echo statement on your chat window. 
 ```lua
 c = require('colors')
 return {
@@ -71,8 +71,8 @@ return {
 ```
 
 ### Example #2 (Turning Towards or Away):
-When any anyone uses Apocalyptyic Ray, Afflicting Gaze or Dread Spikes, you will turn away from that enemy.
-When any anyone uses Impale or Waning Vigor, turn towards them.
+When anyone uses Apocalyptyic Ray, Afflicting Gaze or Dread Spikes, you will turn away from that enemy.
+When anyone uses Impale or Waning Vigor, turn towards them.
 ```lua
 return {
 	--Turn Away
@@ -97,7 +97,7 @@ return {
 ### Example #3 (Useful sortie-specific responses and color changes):
 
 #### Degei/Aita does Flaming Kick and turns Blue!
-When Degei/Aita does Eroding Flesh, /echo that it's time to nuke Aero and change Degei/Aita to a shade of Blue
+When Degei/Aita does Flaming Kick, /echo that it's time to nuke Aero and change Degei/Aita to a shade of Blue
 
 ![Aminon with a blue tint](images/shinyreactor01.png)
 
