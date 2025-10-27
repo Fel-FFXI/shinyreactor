@@ -21,9 +21,10 @@
    ```bash
    git clone https://github.com/<your-username>/shinyreactor.git
    ```
-2. Place the shinyreactor folder into your Ashita `addons/` directory:
+2. Place both the Turn and Shinyreactor folders into your Ashita `addons/` directory:
    ```
    Ashita/addons/shinyreactor/
+   Ashita/addons/turn/
    ```
 3. Place reactions lua files in your `config/addongs/shinyreactor/` directory:
    ```
@@ -31,13 +32,18 @@
    Ashita/config/addons/shinyreactor/sortie.lua	#This contains reactions for sortie (and color visual cues)
    Ashita/config/addons/shinyreactor/test.lua	#This is just an example file you can load to test things
    ```
-4. Load shinyreactor:
+4. Load shinyreactor and turn:
    ```
    /addon load shinyreactor
+   /addon load turn
    ```
-5. Load any config file with responses you'd like. (This will load turn towards/away reactions).
+5. Load any config file with responses you'd like. (This will enable reactions for many abilities that you want to turn towards or away from).
    ```
    /sreact load turn
+   ```
+6. Alternatively, this will enable reactions for many color changes and responses to abilities found in Sortie.
+   ```
+   /sreact load sortie
    ```
 
 ---
@@ -147,7 +153,7 @@ return {
 ## 🧠 How It Works
 
 ShinyReactor hooks into the game’s action stream and event packets.  
-When it detects a player or mob action matching a trigger condition, it executes the corresponding reaction handler.
+When it detects a player or mob action matching a trigger condition, it executes the corresponding reaction handler. In addition to this, you can also change the colors of the enemies in real time.
 
 ---
 
